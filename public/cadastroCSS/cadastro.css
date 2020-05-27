@@ -1,0 +1,147 @@
+.header{
+    background-image: url("backgroundHeader.png");
+  }
+  .logo{
+      width: 250px;
+      display: inline;
+  }
+  body{
+    background-image: url("background.png");
+  }
+  
+      
+  .navigation-footer {
+    margin-top: 30px;
+    width: 100%;  
+    height: 210px; 
+    background-image: url("backgroundHeader.png");
+  }
+  .navigation-bar {
+    width: 100%;  
+    height: 105px; 
+    background-image: url("backgroundHeader.png");
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 1px;    
+  }
+  .navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        
+    line-height: 80px;    
+  }
+  
+  .a{
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  .rightbutton{
+    cursor: pointer;
+    margin-top: 22px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    margin-left: 30%;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-image: url("backgroundButton.png");
+    border: outset;
+    border-color:rgb(120, 255, 108);
+  }
+  .button{
+    cursor: pointer;
+    margin-top: 22px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 10px;
+    width: 140px;
+    height: 50px;
+    background-image: url("backgroundButton.png");
+    border: outset;
+    border-color: rgb(120, 255, 108);
+  }
+
+  input[disabled]{
+    cursor: inherit;
+    margin-top: 22px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: gray;
+    background-image: none;
+    border: outset;
+    border-color: rgb(105, 105, 105);
+  }
+  
+  .card{
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+  }
+  .propaganda{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .logoFooter {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 1px;    
+  }
+  
+  .aFooter{
+    margin-top: 70px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  
+  .navigation-footer > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    
+    line-height: 80px;    
+  }
+  a {
+     text-decoration: none; 
+  }
+  .input{
+    border-radius: 15px;
+    height: 25px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 10px;
+    border: inset;
+  }
+  .label{
+    color: #000;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  .margin-top-10px{
+    margin-top: 10px;
+  }
+  .texto{
+    color: #000;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 20px;
+  }
