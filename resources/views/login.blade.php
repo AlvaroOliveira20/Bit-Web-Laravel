@@ -2,15 +2,15 @@
 <html>
     <head>
         <title>BitWeb - login</title>
-        <link rel="stylesheet" type="text/css" href="loginCSS/login.css">
-        <script type="text/javascript" src="login.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{asset('loginCSS/login.css')}}">
+        <script type="text/javascript" src="backtop.js"></script>
         <meta-charset="utf-8"/>
     </head>
 
     <body style="margin:0;" class = "content">
     
         <nav class="navigation-bar">
-            <img class="logo" src="loginCSS/logo.png">
+            <img class="logo" src="{{asset('loginCSS/logo.png')}}">
             <a style = "cursor: pointer;"  onclick="window.location.href='{{route('home')}}'" class = "a" >Início</a>
             <a style = "cursor: pointer;"  class = "a" >BitConta</a>
             <a style = "cursor: pointer;"  class = "a" >BitRewards</a>
@@ -24,6 +24,11 @@
             <p class = "texto">Faça seu login</p>
             <form action = "{{route('logar')}}" method = "post"> 
                 @csrf
+                @if(session('erro'))
+                    <div class= "alert alert-danger">
+                        <p style="color: red"> <strong>Erro!</strong>  {{session('erro')}}!</p>
+                    </div>
+                @endif
                 <div>
                         <label class = "label">CPF:<label>
                 </div>
@@ -56,7 +61,7 @@
         </div>
     
         <nav class="navigation-footer">
-            <img class="logoFooter" src="loginCSS/logo.png">
+            <img class="logoFooter" src="{{asset('loginCSS/logo.png')}}">
             <a style = "cursor: pointer;"  class = "aFooter" >Contato</a>
             <a style = "cursor: pointer;"  class = "aFooter" >Ajuda</a>
             <a style = "cursor: pointer;"  class = "aFooter" >Política de privacidade</a>

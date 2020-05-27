@@ -13,13 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get("/home/", "HomeController@home")->name('home');
+
+Route::get("/", "HomeController@home")->name('home');
 
 Route::get("/login/", "LoginController@login")->name('login');
 
 Route::get("/cadastro/", "CadastroController@cadastro")->name('cadastro');
 
 Route::post("/logar/", "LoginController@logar")->name('logar');
+
+Route::post("/cadastrar/", "CadastroController@cadastrar")->name('cadastrar');
+
+Route::get("/home/", "HomeController@homePage")->name('homePage');

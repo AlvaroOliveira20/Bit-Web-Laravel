@@ -10,11 +10,17 @@ class LoginController extends Controller
         return view('login');
     }
     public function logar(Request $request){
-        if ($request->cpf == "11111111111" && $request->senha == "123456" )
-            echo ("pass");
+        $request->validate([
+            'cpf'   =>      'required',
+            'senha'   =>      'required',
+        ]);
+
+
+
+        if ($request->cpf == "123.456.789.10" && $request->senha == "123456" )
+            return redirect()->route('homePage')->with('message', 'ok');
         else
-            echo ("nop");
-        
+            return redirect()->back()->with('erro', 'CPF ou senha incorretos');
     }
     //
 }

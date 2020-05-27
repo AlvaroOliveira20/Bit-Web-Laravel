@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BitWeb - Seu banco digital</title>
+        <title>BitWeb - Início</title>
         <link rel="stylesheet" type="text/css" href="{{asset('homeCSS/home.css')}}">
         <script type="text/javascript" src="backtop.js"></script>
         <meta-charset="utf-8"/>
@@ -17,22 +17,12 @@
             <a style = "cursor: pointer;"  class = "a" >BitRewards</a>
             <a style = "cursor: pointer;"  class = "a" >BitCard</a>
             <a style = "cursor: pointer;"  class = "a" >Sobre</a>
-            <button href = "#" onclick="window.location.href='{{route('login')}}'" class = "rightbutton">Login</button>
-            <button href = "#" onclick="window.location.href='{{route('cadastro')}}'" class = "button">Criar BitConta</button> 
+            
         </nav>
 
         <div class = "card">
-            <img class="propaganda" src="homeCSS/prop.png">
+            <img class="propaganda" src="propaganda4.png">
         </div>
-
-        <div class = "card">
-            <img class="propaganda" src="homeCSS/prop2.png">
-        </div>
-
-        <div class = "card">
-            <img class="propaganda" src="homeCSS/prop3.png">
-        </div>
-
 
         <nav class="navigation-footer">
             <img class="logoFooter" src="{{asset('homeCSS/logo.png')}}">
