@@ -17,9 +17,9 @@
             <a style = "cursor: pointer;"  class = "a" >BitRewards</a>
             <a style = "cursor: pointer;"  class = "a" >BitCard</a>
             <a style = "cursor: pointer;"  class = "a" >Sobre</a>
-            
+            <button href = "#" onclick="window.location.href='{{route('logout')}}'" class = "rightbutton">Deslogar</button>
         </nav>
-
+    <p align="center" style="font-size: 30px;">olá{{session('nome')}}</p>
         <div class = "card">
             <img class="propaganda" src="propaganda4.png">
         </div>

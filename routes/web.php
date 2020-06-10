@@ -24,4 +24,10 @@ Route::post("/logar/", "LoginController@logar")->name('logar');
 
 Route::post("/cadastrar/", "CadastroController@cadastrar")->name('cadastrar');
 
-Route::get("/home/", "HomeController@homePage")->name('homePage');
+
+
+Route::group(['middleware' => ['login']], function () {
+    Route::get("/home/", "HomeController@homePage")->name('homePage');
+
+    Route::get("/logout/", "LoginController@deslogar")->name('logout');
+});
