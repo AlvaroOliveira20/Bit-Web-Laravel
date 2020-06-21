@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+            (function () {
+                window.onload = function () {
+                    new BlipChat()
+                    .withAppKey('Yml0Ym90OjQxZmZmYTViLTkwZWYtNDExNi1hMDYyLWVmNDJjZDBlMzhlYw==')
+                    .withButton({"color":"green","icon":""})
+                    .withCustomCommonUrl('https://chat.blip.ai/')
+                    .build();
+                }
+            })();
+        </script>
         <title>BitWeb - Seu banco digital</title>
         <link rel="stylesheet" type="text/css" href="{{asset('homeCSS/home.css')}}">
         <script type="text/javascript" src="backtop.js"></script>
         <meta-charset="utf-8"/>
     </head>
-    
-
     <body style="margin:0;" class = "content">
 
         <nav class="navigation-bar">
