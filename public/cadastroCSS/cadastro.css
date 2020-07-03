@@ -54,7 +54,7 @@
     height: 50px;
     background-image: url("backgroundButton.png");
     border: outset;
-    border-color:rgb(120, 255, 108);
+    border-color:rgb(0, 143, 168);
   }
   .button{
     cursor: pointer;
@@ -67,7 +67,7 @@
     height: 50px;
     background-image: url("backgroundButton.png");
     border: outset;
-    border-color: rgb(120, 255, 108);
+    border-color: rgb(0, 143, 168);
   }
 
   input[disabled]{

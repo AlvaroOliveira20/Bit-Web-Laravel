@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+        </script>
+        <script>
+                (function () {
+                    window.onload = function () {
+                        new BlipChat()
+                        .withAppKey('Yml0Ym90OjQxZmZmYTViLTkwZWYtNDExNi1hMDYyLWVmNDJjZDBlMzhlYw==')
+                        .withButton({"color":"#00b4a6","icon":""})
+                        .withCustomCommonUrl('https://chat.blip.ai/')
+                        .build();
+                    }
+                })();
+            </script>
         <title>BitWeb - cadastro</title>
         <link rel="stylesheet" type="text/css" href="{{asset('cadastroCSS/cadastro.css')}}">
         <script type="text/javascript" src="backtop.js"></script>
@@ -27,7 +40,7 @@
                 <div>
                         <label class = "label">CPF:<label>
                 </div>
-                <input name = "cpf" type = "tel" maxlength="11" placeholder="000.000.000.00" class = "input"></input>
+                <input name = "cpf" type = "tel" maxlength="14" placeholder="000.000.000-00" class = "input"></input>
                 <div>
                     <label class = "label">Nome completo:<label>
                 </div>
@@ -39,7 +52,7 @@
                 <div>
                     <label class = "label">Senha<label>
                 </div>
-                <input name = "password" type = "password"  placeholder = "6 dígitos" class = "input"></input>
+                <input name = "senha" type = "password"  placeholder = "6 dígitos" class = "input"></input>
                 <div>
                     <span>
                         <input type = "checkbox" id="check" onclick="enable()"  ></input>

@@ -30,4 +30,5 @@ Route::group(['middleware' => ['login']], function () {
     Route::get("/home/", "HomeController@homePage")->name('homePage');
 
     Route::get("/logout/", "LoginController@deslogar")->name('logout');
+    Route::get("/delete/{id}", "LoginController@delete")->name('delete');
 });

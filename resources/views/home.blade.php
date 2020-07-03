@@ -8,7 +8,7 @@
                 window.onload = function () {
                     new BlipChat()
                     .withAppKey('Yml0Ym90OjQxZmZmYTViLTkwZWYtNDExNi1hMDYyLWVmNDJjZDBlMzhlYw==')
-                    .withButton({"color":"green","icon":""})
+                    .withButton({"color":"#00b4a6","icon":""})
                     .withCustomCommonUrl('https://chat.blip.ai/')
                     .build();
                 }

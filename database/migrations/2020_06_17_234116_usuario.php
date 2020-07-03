@@ -17,6 +17,8 @@ class Usuario extends Migration
             $table->increments('id');
             $table->string('cpf');
             $table->string('senha');
+            $table->string('email');
+            $table->string('name');
             $table->timestamps();
         });
     }

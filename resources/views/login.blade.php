@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+        </script>
+        <script>
+                (function () {
+                    window.onload = function () {
+                        new BlipChat()
+                        .withAppKey('Yml0Ym90OjQxZmZmYTViLTkwZWYtNDExNi1hMDYyLWVmNDJjZDBlMzhlYw==')
+                        .withButton({"color":"#00b4a6","icon":""})
+                        .withCustomCommonUrl('https://chat.blip.ai/')
+                        .build();
+                    }
+                })();
+            </script>
         <title>BitWeb - login</title>
         <link rel="stylesheet" type="text/css" href="{{asset('loginCSS/login.css')}}">
         <script type="text/javascript" src="backtop.js"></script>
@@ -27,6 +40,11 @@
                 @if(session('erro'))
                     <div class= "alert alert-danger">
                         <p style="color: red"> <strong>Erro!</strong>  {{session('erro')}}!</p>
+                    </div>
+                @endif
+                @if(session('sucess'))
+                    <div class= "alert alert-danger">
+                        <p style="color: rgb(6, 168, 0)">{{session('sucess')}}!</p>
                     </div>
                 @endif
                 <div>

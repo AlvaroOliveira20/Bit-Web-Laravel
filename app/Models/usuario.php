@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class usuario extends Model
-{
-    //
+class usuario extends Model {
+    protected $fillable = ['cpf', 'senha', 'email', 'name'];
 }
